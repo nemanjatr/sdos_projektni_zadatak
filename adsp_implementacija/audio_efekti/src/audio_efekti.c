@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 	
 	printf("%d", sizeof(float));
 
-	int index, uid = 999;  /* arbitrary userid for heap */
+	int uid = 999;  /* arbitrary userid for heap */
 	float *audio_input = 0;
 	float *audio_output = 0;
 
@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
 
 
 
-	FILE *fp = fopen("../output_files/delay_output.txt", "w");
+	FILE *fp = fopen("../output_files/delay.txt", "w");
 	if(fp == NULL)
 	{
 		printf("File open failed/n");
@@ -120,16 +120,6 @@ int main(int argc, char *argv[])
 
 	heap_free(index, audio_input);
 	heap_free(index, audio_output);
-
-
-	/* Print it out */
-//	for(int i = 0; i < LEN; i++){
-//		printf("%.8f, ", audio_input[i]);
-//		if((i+1) % 5 == 0){
-//			printf("\n");
-//		}
-//	}
-
 
 	return 0;
 }
