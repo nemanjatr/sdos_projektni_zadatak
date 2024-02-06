@@ -1,4 +1,4 @@
-#pragma section ("filter_seg")
+#pragma section ("seg_sdram")
 const float peak_a_coeff[] = {
 	1.000000, -1.791315, 0.866698, 
 	1.000000, -1.791217, 0.866653, 

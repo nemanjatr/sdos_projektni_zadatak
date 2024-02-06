@@ -1,4 +1,4 @@
-#pragma section("filter_seg")
+#pragma section("seg_sdram")
 float notch_a_coeff[] = {
 	1.000000, -1.678308, 0.748935, 
 	1.000000, -1.678179, 0.748854, 

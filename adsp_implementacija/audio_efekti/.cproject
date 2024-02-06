@@ -31,7 +31,7 @@
 							</tool>
 							<tool id="sharc.toolchain.compiler.1053319887" name="CrossCore SHARC C/C++ Compiler" superClass="sharc.toolchain.compiler">
 								<option id="compiler.option.optimization.1619690184" name="Enable optimization (-O)" superClass="compiler.option.optimization" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="compiler.option.debugcode.2143703066" name="Generate debug information (-g)" superClass="compiler.option.debugcode" useByScannerDiscovery="false"/>
+								<option id="compiler.option.debugcode.2143703066" name="Generate debug information (-g)" superClass="compiler.option.debugcode" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<option id="compiler.option.proc.1236630119" name="-proc" superClass="compiler.option.proc" value=" ADSP-21489" valueType="string"/>
 								<option id="compiler.option.sirevision.480125653" name="-si-revision" superClass="compiler.option.sirevision" value=" 0.2" valueType="string"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="compiler.option.preprocessdefs.677592309" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
@@ -59,7 +59,7 @@
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.srchdir.1507463164" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
 								</option>
-								<option id="linker.option.misrachecksrcfiles.1973853427" superClass="linker.option.misrachecksrcfiles" value="true" valueType="boolean"/>
+								<option id="linker.option.misrachecksrcfiles.1973853427" name="-misra-no-cross-module" superClass="linker.option.misrachecksrcfiles" value="true" valueType="boolean"/>
 								<inputType id="linker.doj.input.1241001021" name="Object Files" superClass="linker.doj.input"/>
 							</tool>
 							<tool id="sharc.toolchain.archiver.1686153739" name="CrossCore SHARC Archiver" superClass="sharc.toolchain.archiver">
@@ -69,7 +69,7 @@
 							<tool id="sharc.toolchain.loader.854955602" name="CrossCore SHARC Loader" superClass="sharc.toolchain.loader">
 								<option id="loader.option.proc.907355307" name="-proc" superClass="loader.option.proc" value=" ADSP-21489" valueType="string"/>
 								<option id="loader.option.sirevision.2112038320" name="-si-revision" superClass="loader.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="sharc.loader.option.kernelfile.36042840" superClass="sharc.loader.option.kernelfile" value="C:\Analog Devices\CrossCore Embedded Studio 2.12.0\SHARC\ldr\489_prom.dxe" valueType="string"/>
+								<option id="sharc.loader.option.kernelfile.36042840" name="Kernel file (-l)" superClass="sharc.loader.option.kernelfile" value="C:\Analog Devices\CrossCore Embedded Studio 2.12.0\SHARC\ldr\489_prom.dxe" valueType="string"/>
 							</tool>
 							<tool id="sharc.toolchain.deviceprogrammer.963998825" name="CrossCore SHARC Device Programmer" superClass="sharc.toolchain.deviceprogrammer">
 								<option id="deviceprogrammer.option.proc.1865373731" name="-proc" superClass="deviceprogrammer.option.proc" value=" ADSP-21489" valueType="string"/>
@@ -78,6 +78,7 @@
 					</folderInfo>
 					<folderInfo id="sharc.toolchain.configuration.debug.1279219238.system" name="system" resourcePath="system">
 						<toolChain id="sharc.toolchain.1518621685" name="CrossCore SHARC Toolchain" superClass="sharc.toolchain" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="sharc.platform" name="CrossCore SHARC Target Platform" osList="all" superClass="sharc.platform"/>
 							<tool id="sharc.toolchain.assembler.604878619" name="CrossCore SHARC Assembler" superClass="sharc.toolchain.assembler.1041600272">
 								<inputType id="assembler.input.123343345" name="Assembler Source" superClass="assembler.input"/>
 							</tool>
@@ -157,7 +158,7 @@
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="linker.option.srchdir.110546110" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
 								</option>
-								<option id="linker.option.misrachecksrcfiles.1716901675" superClass="linker.option.misrachecksrcfiles" value="true" valueType="boolean"/>
+								<option id="linker.option.misrachecksrcfiles.1716901675" name="-misra-no-cross-module" superClass="linker.option.misrachecksrcfiles" value="true" valueType="boolean"/>
 								<inputType id="linker.doj.input.2128046732" name="Object Files" superClass="linker.doj.input"/>
 							</tool>
 							<tool id="sharc.toolchain.archiver.365106007" name="CrossCore SHARC Archiver" superClass="sharc.toolchain.archiver">
@@ -167,7 +168,7 @@
 							<tool id="sharc.toolchain.loader.709559209" name="CrossCore SHARC Loader" superClass="sharc.toolchain.loader">
 								<option id="loader.option.proc.199116995" name="-proc" superClass="loader.option.proc" value=" ADSP-21489" valueType="string"/>
 								<option id="loader.option.sirevision.1101748985" name="-si-revision" superClass="loader.option.sirevision" value=" 0.2" valueType="string"/>
-								<option id="sharc.loader.option.kernelfile.399189501" superClass="sharc.loader.option.kernelfile" value="C:\Analog Devices\CrossCore Embedded Studio 2.12.0\SHARC\ldr\489_prom.dxe" valueType="string"/>
+								<option id="sharc.loader.option.kernelfile.399189501" name="Kernel file (-l)" superClass="sharc.loader.option.kernelfile" value="C:\Analog Devices\CrossCore Embedded Studio 2.12.0\SHARC\ldr\489_prom.dxe" valueType="string"/>
 							</tool>
 							<tool id="sharc.toolchain.deviceprogrammer.1912753282" name="CrossCore SHARC Device Programmer" superClass="sharc.toolchain.deviceprogrammer">
 								<option id="deviceprogrammer.option.proc.96170126" name="-proc" superClass="deviceprogrammer.option.proc" value=" ADSP-21489" valueType="string"/>
@@ -176,6 +177,7 @@
 					</folderInfo>
 					<folderInfo id="sharc.toolchain.configuration.release.1843394780.system" name="system" resourcePath="system">
 						<toolChain id="sharc.toolchain.55807226" name="CrossCore SHARC Toolchain" superClass="sharc.toolchain" unusedChildren="">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="sharc.platform" name="CrossCore SHARC Target Platform" osList="all" superClass="sharc.platform"/>
 							<tool id="sharc.toolchain.assembler.859813829" name="CrossCore SHARC Assembler" superClass="sharc.toolchain.assembler.1821811654">
 								<inputType id="assembler.input.2049028333" name="Assembler Source" superClass="assembler.input"/>
 							</tool>
@@ -223,4 +225,5 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
